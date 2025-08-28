@@ -16,7 +16,7 @@ public class PurposeActivity extends AppCompatActivity {
     TextView countText;
     String allMoney;
     String money;
-
+    SaveClass saveClass;
 
 
     ActivityResultLauncher<Intent> addPurposeLauncher = registerForActivityResult(
@@ -50,6 +50,8 @@ public class PurposeActivity extends AppCompatActivity {
         countText = findViewById(R.id.cointText);
         allCountText.setFreezesText(true);
         countText.setFreezesText(true);
+        saveClass = new SaveClass();
+        saveClass.saveText(countText, allCountText, allMoney, money);
     }
 
     public void addCount(View view) {

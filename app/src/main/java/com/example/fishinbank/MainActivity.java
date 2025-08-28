@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
-
+    Intent intent = new Intent(this, IncomeActivity.class);
+    startActivity(intent);
     }
 
     public void author(View view) {

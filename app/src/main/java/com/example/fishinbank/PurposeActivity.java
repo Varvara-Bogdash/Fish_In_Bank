@@ -17,6 +17,10 @@ public class PurposeActivity extends AppCompatActivity {
     String allMoney;
     String money;
     SaveClass saveClass;
+    int plusCount;
+    int plusAllCount;
+    int minusCount;
+    int minusAllCount;
 
 
     ActivityResultLauncher<Intent> addPurposeLauncher = registerForActivityResult(
@@ -70,6 +74,27 @@ public class PurposeActivity extends AppCompatActivity {
     }
 
     public void wallet(View view) {
-        // Реализация метода wallet
+        Intent intent = new Intent(this, ChargeActivity.class);
+        startActivity(intent);
+    }
+
+    public void minusCount(View view) {
+        minusCount -= 500;
+        countText.append(String.valueOf(minusCount));
+    }
+
+    public void plusCount(View view) {
+        plusCount += 1000;
+        countText.append(String.valueOf(plusCount));
+    }
+
+    public void plusAllCount(View view) {
+        plusAllCount += 1000;
+        allCountText.append(String.valueOf(plusAllCount));
+    }
+
+    public void minusAllCount(View view) {
+        minusAllCount -= 500;
+        allCountText.append(String.valueOf(minusAllCount));
     }
 }

@@ -35,6 +35,27 @@
         app:layout_constraintTop_toBottomOf="@+id/income"
         app:layout_constraintVertical_bias="0.033" />
 
+    <!-- Диаграмма расходов -->
+    <com.example.fishinbank.PieChartView
+        android:id="@+id/expenseChart"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charge" />
+
+    <!-- Диаграмма доходов -->
+    <com.example.fishinbank.IncomePieChartView
+        android:id="@+id/incomeChart"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseChart" />
+
+    <!-- Остальные элементы вашего макета остаются без изменений -->
     <ImageButton
         android:id="@+id/author"
         android:layout_width="66dp"

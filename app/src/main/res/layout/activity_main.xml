@@ -38,8 +38,8 @@
     <!-- Диаграмма расходов -->
     <com.example.fishinbank.PieChartView
         android:id="@+id/expenseChart"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="306dp"
+        android:layout_height="195dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +48,8 @@
     <!-- Диаграмма доходов -->
     <com.example.fishinbank.IncomePieChartView
         android:id="@+id/incomeChart"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="310dp"
+        android:layout_height="211dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
